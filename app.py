@@ -11,3 +11,9 @@ question_type = st.selectbox(
     "Select question type",
     ["MCQs", "Short Answers", "Viva Questions"]
 )
+
+if st.button("Generate Questions"):
+    if uploaded_file is None:
+        st.error("Please upload a PDF file")
+    else:
+        st.success("Processing PDF and generating questions...")

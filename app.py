@@ -6,3 +6,8 @@ st.title("📘 ExamPrep AI")
 st.write("Upload your syllabus or notes and generate exam questions.")
 
 uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
+
+question_type = st.selectbox(
+    "Select question type",
+    ["MCQs", "Short Answers", "Viva Questions"]
+)
